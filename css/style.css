@@ -1,0 +1,182 @@
+body {
+margin : 0;
+background-color : #EBEBE0;
+}
+
+header {
+width : 100%;
+text-align : center;
+}
+
+main {
+width : 70%;
+margin : 30px auto;
+background-color : #C5BCAB;
+padding : 30px;
+display : flex;
+flex-direction : row;
+}
+
+section {
+background-color : #f1f1f1;
+width : 50%;
+margin : 10px;
+padding : 20px;
+border : black solid 1px;
+}
+
+.featureimg {
+width : 100%;
+}
+
+
+@font-face {
+body {
+font-family : SEGOEUI, arial, sans-serif;
+}
+
+footer {
+font-size : smaller;
+}
+
+nav {
+width : 100%;
+padding : 10px;
+text-align : center;
+background-color : #63B4C9;
+}
+
+ul {
+padding : 0;
+}
+
+li {
+display : inline-block;
+}
+
+a {
+text-decoration : none;
+padding : 10px 20px;
+font-variant : small-caps;
+}
+
+a:link {
+color : #FFFFFF;
+}
+
+a:visited {
+color : #EBEBE0;
+}
+
+a:hover {
+color : #4C3639;
+text-shadow : 2px 2px 2px rgb(0, 0, 0, 0.3);
+}
+
+a:active {
+color : #4C3639;
+font-weight : bold;
+}
+
+.qaparagraph {
+text-align : left;
+}
+
+.favstore {
+text-align : left;
+margin-bottom : 20px;
+}
+
+.altlabel {
+display : block;
+text-align : left;
+}
+
+input[type="text"], textarea {
+display : block;
+padding : 15px;
+border : lightgray solid 1.5px;
+border-radius : 4px;
+}
+
+input[type="text"]:focus {
+width : 50%;
+}
+
+textarea {
+box-sizing : border-box;
+width : 100%;
+height : auto;
+margin-bottom : 10px;
+margin-left : auto;
+margin-right : auto;
+}
+
+input[type="submit"] {
+display : block;
+}
+
+video {
+width : 100%;
+height : auto;
+}
+
+.zoom figure img {
+width : 100%;
+}
+
+figure {
+margin : 0;
+padding : 0;
+background : #fff;
+overflow : hidden;
+}
+
+.zoom figure img {
+transform : scale(1);
+transition : 0.3s ease-in-out;
+}
+
+.zoom:hover figure img {
+transform : scale(1.3);
+}
+
+.blackwhite figure img {
+width : 100%;
+}
+
+.blackwhite figure img {
+filter : grayscale(100%);
+transition : 0.2s ease-in-out;
+}
+
+.blackwhite figure:hover img {
+filter : grayscale(0);
+}
+}
+
+@media screen and (max-width: 1200px) {
+main {
+background-color : white;
+padding : 10px;
+}
+}
+
+@media screen and (max-width: 800px) {
+main {
+width : 100%;
+background-color : #EBEBE0;
+flex-direction : column;
+padding : 20px;
+justify-content : center;
+align-items : center;
+margin : auto;
+}
+
+section {
+width : 80%;
+padding : 20px;
+margin : 5px;
+box-sizing : border-box;
+}
+}
